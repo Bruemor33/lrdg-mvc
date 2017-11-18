@@ -14,7 +14,8 @@
     "build": "npm run build:css && npm run build:js",
     "babel": "babel --presets es2015 js/index.js -o build/main.bundle.js",
     "start": "http-server",
-    "webpack": "webpack"
+    "webpack": "webpack",
+    "watch": "webpack --watch"
   },
   "author": "Andrew Rymer",
   "license": "MIT",

@@ -14,7 +14,8 @@ let config = {
         loaders: [
             {
                 test: /\.js$/,
-                loader: 'babel-loader',
+                exclude: /node_modules/, // Excluding node_modules cuz duh
+                loader: 'babel-loader', // Include babel (core) loader to set compile preset
                 query: {
                     presets: ['es2015']
                 }
