@@ -24,6 +24,7 @@
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "babel-preset-es2015": "^6.24.1",
+    "express": "^4.16.2",
     "webpack": "^2.7.0",
     "webpack-css-loaders": "^1.0.0"
   }
