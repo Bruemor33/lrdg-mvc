@@ -2,14 +2,13 @@ var path = require('path');
 var webpack = require('webpack');
 // require('./css/main.css');
 
-module.exports = {
+let config = {
     entry: [
         './main.js',
         './css/main.css'
     ],
     output: {
-        path: path.resolve(__dirname, 'build'),
-        filename: 'main.bundle.js'
+        filename: 'main.js'
     },
     module: {
         loaders: [
@@ -26,9 +25,7 @@ module.exports = {
                 options: { import: false }
             }
         ]
-    },
-    stats: {
-        colors: true
-    },
-    devtool: 'source-map'
-};
+    }
+}
+
+module.exports = config;
