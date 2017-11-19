@@ -84,18 +84,18 @@ Unordered List Styling
 
 /*Images*/
 .cd-slideshow li:nth-child(1) span {
-  background-image: url('images/environment-homepage.png');
+  background-image: url('../images/environment-homepage.png');
 }
 .cd-slideshow li:nth-child(2) span {
-  background-image: url('images/inspire-homepage.png');
+  background-image: url('../images/inspire-homepage.png');
   animation-delay: 6s;
 }
 .cd-slideshow li:nth-child(3) span {
-  background-image: url('images/design-homepage.png');
+  background-image: url('../images/design-homepage.png');
   animation-delay: 12s;
 }
 .cd-slideshow li:nth-child(4) span {
-  background-image: url('images/community-homepage.jpg');
+  background-image: url('../images/community-homepage.jpg');
   animation-delay: 18s;
 }
 
