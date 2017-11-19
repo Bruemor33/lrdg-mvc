@@ -9,6 +9,4 @@
 
   }
 
-  console.log(navigationCheck);
-
 }());

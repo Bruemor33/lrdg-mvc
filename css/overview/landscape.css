@@ -1,0 +1,89 @@
+/***************
+Import Navigation css
+***************/
+@import url("../navigation.css");
+
+/*********************************************************************************************
+Landscape Architecture Page
+*********************************************************************************************/
+
+h1 {
+  color: red;
+}
+
+body {
+  color: black;
+}
+
+#page-background {
+  background-image: url('../../images/overview-background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+.landscape-title {
+  position: fixed;
+  top: 20px;
+  width: 500px;
+  height: 70px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: -5px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #FFF;
+  font-family: 'Poppins', serif;
+  font-weight: 300;
+
+}
+
+.landscape-statement {
+  position: relative;
+  top: 91.5px;
+  width: 500px;
+  height: 380px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #FFF;
+  font-family: 'Poppins', serif;
+  font-weight: 300;
+}
+
+.scroller {
+  overflow-y: scroll;
+  height: 350px;
+}
+
+li {
+  list-style: none;
+}
+
+/*********************************************************************************************
+Landscape Architecture Page
+*********************************************************************************************/
+
+/**************************************************************************************
+MEDIA QUERIES
+**************************************************************************************/
+
+@media(max-height: 1920px) and (max-width: 2460px) and (min-width: 1441px) {
+
+  .landscape-statement {
+    height: 480px;
+  }
+
+  .scroller {
+    height: 450px;
+  }
+
+}
+
+/**************************************************************************************
+MEDIA QUERIES
+**************************************************************************************/
