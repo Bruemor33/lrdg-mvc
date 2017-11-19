@@ -17,13 +17,23 @@ const header = Twig.twig({
 });
 
 const footer = Twig.twig({
-    data: header-template,
+    data: footer-template,
     namespaces: { 'footer': '../app/views/layout/' }
 });
+
+const home = Twig.twig({
+    data: home-template,
+    namespaces: { 'home': '../app/views/layout/'}
+});
+
+const navbar = Twig.twig({
+    data: navbar-template,
+    namespaces: { 'navigation': '../app/views/layout/'}
+})
 
 app.get('/', function(req, res) {
     res.render('header');
     res.render('footer');
 });
 
-app.listen(3000, () => console.log('Example app listening on port 3000!'))
+app.listen(8080, () => console.log('Example app listening on port 3000!'))

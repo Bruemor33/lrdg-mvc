@@ -13,7 +13,6 @@
     "build:js": "webpack ./js/index.js ./main.js",
     "build": "npm run build:css && npm run build:js",
     "babel": "babel --presets es2015 js/index.js -o build/main.bundle.js",
-    "start": "http-server",
     "webpack": "webpack",
     "watch": "webpack --watch"
   },
