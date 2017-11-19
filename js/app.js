@@ -6,18 +6,15 @@ app.engine('hbs', hbs.express4({
     partialsDir: __dirname + '/views/partials'
 }));
 
-app.configure(function(){
-    app.set('views', __dirname + '/views');
-    app.set('view engine', 'hbs');
-});
+app.set('views', __dirname + '/views');
+app.set('layout', __dirname + '/layout');
+app.set('view engine', 'hbs');
 
 app.get('/', function(req, res) {
-    req.params
     res.render('home', {
-        home: home,
-        layout: 'layout/home'
+        home: home
     });
 });
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3001;
 app.listen(port);
