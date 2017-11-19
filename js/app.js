@@ -11,6 +11,19 @@ app.configure(function(){
     });
 });
 
-app.get('/', (req, res) => res.send('Hellow World!'));
+const header = Twig.twig({
+    data: header-template,
+    namespaces: { 'header': '../app/views/layout/' }
+});
+
+const footer = Twig.twig({
+    data: header-template,
+    namespaces: { 'footer': '../app/views/layout/' }
+});
+
+app.get('/', function(req, res) {
+    res.render('header');
+    res.render('footer');
+});
 
 app.listen(3000, () => console.log('Example app listening on port 3000!'))
