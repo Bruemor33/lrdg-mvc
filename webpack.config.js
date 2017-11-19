@@ -5,8 +5,7 @@ var webpack = require('webpack');
 let config = {
     entry: [
         './main.js',
-        './css/main.css',
-        './index.twig'
+        './css/main.css'
     ],
     output: {
         filename: 'main.js'
