@@ -2,6 +2,8 @@
 Import Navigation css
 ***************/
 @import url("../navigation.css");
+@import url("./_project-images.css");
+@import url("./_images-media-queries.css")
 
 /***************************************************************************************
 Altis at Sandlake page styling
@@ -167,40 +169,7 @@ li {
     padding-left: 10px;
     padding-right: 10px;
 }
-  
-#sandlake-one {
-    background-image: url('../../images/1-altis-sandlake.png');
-    background-position: 50% 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 620px;
-}
-#sandlake-two {
-    background-image: url('../../images/2-altis-sandlake.png');
-    background-position: 50% 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 620px;
-}
-#sandlake-three {
-    background-image: url('../../images/3-altis-sandlake.png');
-    background-position: 50% 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 620px;
-}
-#sandlake-four {
-    background-image: url('../../images/4-altis-sandlake.png');
-    background-position: 50% 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 620px;
-}
-  
+
 /***************************************************************************************
 Altis at Sandlake page styling
 ***************************************************************************************/
@@ -210,93 +179,61 @@ MEDIA QUERIES
 **************************************************************************************/
 
 @media(max-height: 1920px) and (max-width: 2460px) and (min-width: 1441px) {
-    
-#sandlake-one {
-    height: 1080px;
-}
+  
+    #plaza-summary {
+        height: 615px;
+    }
 
-#sandlake-two {
-    height: 1080px;
-}
+    .summary-container {
+        overflow-y: none;
+        height: 620px;
+    }
 
-#sandlake-three {
-    height: 1080px;
-}
+    #site-nav {
+        top: 830px;
+    }
 
-#sandlake-four {
-    height: 1080px;
-}
+    .navbar {
+        top: 830px;
+    }
 
-#plaza-summary {
-    height: 615px;
-}
+    .logo {
+        height: 113px;
+        padding: 0;
+        display: inline-block;
+        margin-left: 50px;
+        position: absolute;
+        top: -19px;
+    }
 
-.summary-container {
-    overflow-y: none;
-    height: 620px;
-}
-
-#site-nav {
-    top: 830px;
-}
-
-.navbar {
-    top: 830px;
-}
-
-.logo {
-    height: 113px;
-    padding: 0;
-    display: inline-block;
-    margin-left: 50px;
-    position: absolute;
-    top: -19px;
-}
-
-.landing {
-    margin-left: 60%;
-}
+    .landing {
+        margin-left: 60%;
+    }
 
 }
 
 @media(max-height: 1079px) and (min-height: 610px) and (max-width: 1440px) and (min-width: 1261px) {
 
-#sandlake-one {
-    height: 630px;
-}
+    #site-nav {
+        top: 520px;
+    }
 
-#sandlake-two {
-    height: 630px;
-}
+    .navbar {
+        top: 520px;
+    }
 
-#sandlake-three {
-    height: 630px;
-}
+    .logo {
+        height: 113px;
+        padding: 0;
+        display: inline-block;
+        margin-left: 50px;
+        position: absolute;
+        top: -19px;
+    }
 
-#sandlake-four {
-    height: 630px;
-}
-
-#site-nav {
-    top: 520px;
-}
-
-.navbar {
-    top: 520px;
-}
-
-.logo {
-    height: 113px;
-    padding: 0;
-    display: inline-block;
-    margin-left: 50px;
-    position: absolute;
-    top: -19px;
-}
-
-.landing {
-    margin-left: 50%;
-}
+    .landing {
+        margin-left: 50%;
+    }
 
 }
 

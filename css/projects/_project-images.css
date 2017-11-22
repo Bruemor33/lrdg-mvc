@@ -1,0 +1,34 @@
+
+#sandlake-one {
+    background-image: url('../../images/1-altis-sandlake.png');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 620px;
+}
+#sandlake-two {
+    background-image: url('../../images/2-altis-sandlake.png');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 620px;
+}
+#sandlake-three {
+    background-image: url('../../images/3-altis-sandlake.png');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 620px;
+}
+#sandlake-four {
+    background-image: url('../../images/4-altis-sandlake.png');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 620px;
+}
+  
