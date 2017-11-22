@@ -4,5 +4,4 @@
           document.getElementById('desktop-navigation').removeClass('nav-items');
         } 
     }
-      console.log(navigationCheck);  
 }());
