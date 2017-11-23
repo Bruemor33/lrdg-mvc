@@ -1,17 +1,22 @@
-var path = require('path');
-var webpack = require('webpack');
-// require('./css/main.css');
+const path = require('path');
+const webpack = require('webpack');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+
+const extractSass = new ExtractTextPlugin({
+    filename: "[name].[contenthash].css",
+    disable: process.env.NODE_ENV === "development" 
+});
 
 let config = {
     entry: [
         './main.js',
-        './css/main.css'
+        './css/main.scss'
     ],
     output: {
         filename: 'main.js'
     },
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.js$/,
                 exclude: /node_modules/, // Excluding node_modules cuz duh
@@ -21,12 +26,17 @@ let config = {
                 }
             },
             {
-                test: /\.css$/,
-                loaders: 'css-loader',
-                options: { import: false }
+                test: /\.scss$/,
+                use: ExtractTextPlugin.extract({
+                    use: ['css-loader', 'sass-loader'],
+                    fallback: 'style-loader'
+                })
             }
         ]
-    }
+    },
+    plugins: [
+        new ExtractTextPlugin('./dist/bundle.css')
+    ]
 }
 
 module.exports = config;
